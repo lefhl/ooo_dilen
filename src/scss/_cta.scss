@@ -1,0 +1,19 @@
+.cta {
+    background-color: $primary;
+    color: #fff;
+    padding: rem-calc(40);
+    border-radius: rem-calc(4);
+    margin-bottom: rem-calc(50);
+
+    &__tel {
+        display: inline-block;
+        font-size: rem-calc(70);
+        margin-bottom: rem-calc(20);
+        border-bottom: rem-calc(4) solid transparent;
+
+        &:hover {
+            color: #fff;
+            border-bottom: rem-calc(4) solid #fff;
+        }
+    }
+}

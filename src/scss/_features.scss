@@ -1,0 +1,16 @@
+.features {
+    padding: rem-calc(50 0);
+    background-color: #fff;
+
+    &__items {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__item {
+        margin-right: rem-calc(15);
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+}

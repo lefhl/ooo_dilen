@@ -1,0 +1,9 @@
+.services {
+    @include bg-cover;
+    padding: rem-calc(50 0);
+    color: #fff;
+
+    &__list {
+        // list-style-type: disc;
+    }
+}

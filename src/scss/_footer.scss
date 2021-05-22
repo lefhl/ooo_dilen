@@ -1,0 +1,11 @@
+.footer {
+    padding: rem-calc(15 0);
+    background-color: #1c1c1c;
+    color: #fff;
+    font-size: rem-calc(16);
+
+    &__wrap {
+        display: flex;
+        justify-content: space-between;
+    }
+}

@@ -1,0 +1,13 @@
+.feature {
+    text-align: center;
+    &__img {
+        margin-bottom: rem-calc(15);
+    }
+
+    &__text {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        line-height: 1.1;
+    }
+}

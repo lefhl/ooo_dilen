@@ -1,0 +1,9 @@
+.about {
+    margin-bottom: rem-calc(70);
+
+    &__wrapper {
+        padding: rem-calc(40 20);
+        border: rem-calc(1) solid $primary;
+        border-radius: rem-calc(4);
+    }
+}

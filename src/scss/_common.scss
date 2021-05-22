@@ -1,0 +1,145 @@
+a {
+  -webkit-transition: all 300ms ease-in-out;
+  -moz-transition: all 300ms ease-in-out;
+  -ms-transition: all 300ms ease-in-out;
+  -o-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
+  color: inherit;
+  text-decoration-skip-ink: none;
+
+  &:active,
+  &:focus,
+  &:hover {
+    color: $primary;
+    // text-decoration: underline;
+  }
+}
+
+::-webkit-search-cancel-button,
+::-webkit-search-decoration,
+::-webkit-search-results-button,
+::-webkit-search-results-decoration {
+  display: none;
+}
+
+::-ms-clear {
+  display: none;
+}
+
+input,
+textarea {
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  margin: 0 0 1rem;
+  padding: 0.5rem;
+  border: rem-calc(1) solid #cacaca;
+  border-radius: 0.25rem;
+  background-color: #fff;
+  font-size: 1rem;
+  font-weight: normal;
+  color: $black;
+  transition: box-shadow 0.5s, border-color 0.25s ease-in-out;
+  appearance: none;
+  box-shadow: none;
+  line-height: normal;
+  height: $global-input-height;
+
+  &:active,
+  &:focus,
+  &:hover {
+    box-shadow: none;
+  }
+}
+
+button {
+  color: inherit;
+  cursor: pointer;
+}
+
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-style: normal;
+  font-weight: bold;
+  color: inherit;
+  text-rendering: optimizeLegibility;
+}
+
+.h1,
+h1 {
+  font-size: rem-calc(50);
+}
+
+.h2,
+h2 {
+  font-size: rem-calc(32);
+  margin-bottom: rem-calc(32);
+}
+
+.h3,
+h3 {
+  font-size: rem-calc(28);
+  margin-bottom: rem-calc(25);
+}
+
+.h4,
+h4 {
+  font-size: rem-calc(26);
+  margin-bottom: rem-calc(15);
+  font-weight: normal;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+.scroll-block {
+  overflow: hidden;
+  padding-right: rem-calc(17);
+}
+
+.text-center {
+  text-align: center;
+}
+
+.no-wrap {
+  white-space: nowrap;
+}
+
+
+@include breakpoint(medium down) {
+  h1,
+  .h1 {
+    font-size: rem-calc(39);
+    margin-bottom: rem-calc(16);
+  }
+
+  h2,
+  .h2 {
+    font-size: rem-calc(25);
+    margin-bottom: rem-calc(25);
+  }
+
+  h3,
+  .h3 {
+    font-size: rem-calc(20);
+    margin-bottom: rem-calc(15);
+  }
+
+  h4,
+  .h4 {
+    line-height: 1.31;
+    font-size: rem-calc(22);
+  }
+}
