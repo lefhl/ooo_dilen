@@ -24,7 +24,29 @@ import "slick-carousel";
           <path d="M2 8H14M14 8L8 2M14 8L8 14" stroke="#F26422" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
         </svg>
         </button>
-      `
+      `,
+
+      responsive: [
+        {
+          breakpoint: 960,
+          settings: {
+            slidesToShow: 3,
+          }
+        },
+        {
+          breakpoint: 640,
+          settings: {
+            slidesToShow: 2,
+          }
+        },
+        {
+          breakpoint: 420,
+          settings: {
+            slidesToShow: 1,
+          }
+        },
+
+      ]
     });
 
   });

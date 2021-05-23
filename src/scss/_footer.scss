@@ -8,4 +8,11 @@
         display: flex;
         justify-content: space-between;
     }
+
+    @include breakpoint(small only) {
+        &__wrap {
+            text-align: center;
+            flex-direction: column;
+        }
+    }
 }

@@ -13,4 +13,33 @@
             margin-right: 0;
         }
     }
+
+    @include breakpoint(medium down) {
+        &__items {
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        &__item {
+            margin-bottom: rem-calc(35);
+            width: calc(33% - 0.834rem);
+        }
+    }
+
+    @include breakpoint(small only) {
+        &__items {
+            flex-direction: column;
+        }
+
+        &__item {
+            display: grid;
+            width: 100%;
+            grid-template-columns: rem-calc(80) auto;
+            column-gap: rem-calc(20);
+            margin-right: 0;
+            margin-bottom: rem-calc(20);
+        }
+
+
+    }
 }

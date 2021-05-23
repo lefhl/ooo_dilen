@@ -37,4 +37,74 @@
             }
         }
     }
+
+    @include breakpoint(large down) {
+        &__wrap {
+            justify-content: space-between;
+        }
+
+        &__menu {
+            position: absolute;
+            flex-direction: column;
+            justify-content: flex-start;
+            width: 40vw;
+            min-width: rem-calc(320);
+            align-items: flex-start;
+            background-color: #1c1c1c;
+            top: 0;
+            right: 0;
+            height: 100vh;
+            padding: rem-calc(100 30 0 70);
+            display: none;
+            z-index: 20;
+
+            &.js-active {
+                display: flex;
+            }
+        }
+
+        &__link {
+            font-size: rem-calc(22);
+            margin-bottom: rem-calc(20);
+
+            &_wha {
+                position: relative;
+                svg {
+                    position: absolute;
+                    right: rem-calc(-30);
+                }
+            }
+        }
+    }
+
+    @include breakpoint(medium down) {
+        &__logo {
+            svg {
+                width: rem-calc(280);
+            }
+        }
+    }
+
+    @include breakpoint(small only) {
+        &__logo {
+            display: flex;
+            align-items: center;
+        }
+
+        &__logo {
+            svg {
+                width: rem-calc(200);
+                height: auto;
+            }
+        }
+    }
+
+    @media (orientation: landscape) and (max-height: 21em) {
+        padding-top: rem-calc(10);
+
+        &__menu {
+            overflow-y: scroll;
+            padding-bottom: rem-calc(50);
+        }
+    }
 }

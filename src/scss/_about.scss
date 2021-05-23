@@ -6,6 +6,8 @@
         border: rem-calc(1) solid $primary;
         border-radius: rem-calc(4);
     }
-}
 
-// TEST 2
+    @include breakpoint(small only) {
+        margin-bottom: rem-calc(30);
+    }
+}

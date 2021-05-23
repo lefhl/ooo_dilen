@@ -69,4 +69,15 @@
             transform: scale(1.2);
         }
     }
+
+    @include breakpoint(medium down) {
+        &__slide-inner {
+            height: rem-calc(400);
+        }
+    }
+
+    @include breakpoint(small only) {
+        padding: rem-calc(30 0);
+        text-align: center;
+    }
 }

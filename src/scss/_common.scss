@@ -117,29 +117,13 @@ html {
   white-space: nowrap;
 }
 
+@include breakpoint(small only) {
+    body {
+        font-size: rem-calc(16);
+    }
 
-@include breakpoint(medium down) {
-  h1,
-  .h1 {
-    font-size: rem-calc(39);
-    margin-bottom: rem-calc(16);
-  }
-
-  h2,
-  .h2 {
-    font-size: rem-calc(25);
-    margin-bottom: rem-calc(25);
-  }
-
-  h3,
-  .h3 {
-    font-size: rem-calc(20);
-    margin-bottom: rem-calc(15);
-  }
-
-  h4,
-  .h4 {
-    line-height: 1.31;
-    font-size: rem-calc(22);
-  }
+    h2, .h2 {
+        font-size: rem-calc(22);
+        margin-bottom: rem-calc(15);
+    }
 }

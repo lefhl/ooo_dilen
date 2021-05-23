@@ -27,4 +27,26 @@
         color: #ffffff;
         margin-bottom: rem-calc(40);
     }
+
+    @include breakpoint(medium down) {
+        &__title {
+            font-size: rem-calc(30);
+        }
+    }
+
+    @include breakpoint(small only) {
+        &__title {
+            font-size: rem-calc(24);
+        }
+    }
+
+    @media (orientation: landscape) and (min-height: 21em) {
+        &__content {
+            padding-top: rem-calc(70);
+        }
+
+        &__title {
+            margin-bottom: rem-calc(15);
+        }
+    }
 }

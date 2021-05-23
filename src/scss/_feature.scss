@@ -10,4 +10,21 @@
         text-align: center;
         line-height: 1.1;
     }
+
+    @include breakpoint(small only) {
+        &__text {
+            flex-direction: row;
+            align-items: center;
+            flex-wrap: wrap;
+
+            span {
+                display: inline-block;
+                margin-right: rem-calc(5);
+            }
+        }
+
+        &__img {
+            margin-bottom: 0;
+        }
+    }
 }

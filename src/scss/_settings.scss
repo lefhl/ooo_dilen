@@ -64,7 +64,7 @@ $breakpoints: (
   small: 0,
   medium: 640px,
   large: 960px,
-  xlarge: 1240px,
+  xlarge: 1100px,
   xxlarge: 1440px,
   xxxlarge: 1920px,
   giant: 2560px,
@@ -76,7 +76,7 @@ $xy-grid: true;
 $grid-container: $global-width;
 $grid-columns: 24;
 $grid-margin-gutters: (
-  small: rem-calc(70),
+  small: rem-calc(50),
   medium: rem-calc(70),
   large: rem-calc(70),
 );

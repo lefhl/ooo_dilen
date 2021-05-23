@@ -40,4 +40,26 @@
             text-decoration: underline;
         }
     }
+
+    @include breakpoint(medium down) {
+        &__tel {
+            font-size: rem-calc(50);
+        }
+    }
+
+    @include breakpoint(small only) {
+        padding: rem-calc(30 20);
+        margin: rem-calc(0 -25 0);
+        border-radius: 0;
+        text-align: center;
+
+        &__tel {
+            font-size: rem-calc(28);
+        }
+
+        &__wha {
+            flex-direction: column;
+            align-items: center;
+        }
+    }
 }
