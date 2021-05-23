@@ -28,12 +28,12 @@
             margin-right: 0;
         }
 
-        &_tel {
+        &_wha {
             display: flex;
             align-items: center;
+            margin-right: rem-calc(5);
             svg {
                 height: rem-calc(20);
-                margin-right: rem-calc(5);
             }
         }
     }

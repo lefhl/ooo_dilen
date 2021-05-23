@@ -16,4 +16,28 @@
             border-bottom: rem-calc(4) solid #fff;
         }
     }
+
+    &__wha {
+        display: flex;
+        svg {
+            height: rem-calc(20);
+        }
+    }
+
+    &__wha-text {
+        margin-right: rem-calc(10);
+    }
+
+    &__wha-link {
+        display: flex;
+        align-items: center;
+        svg {
+            margin-right: rem-calc(5);
+        }
+
+        &:hover {
+            color: #fff;
+            text-decoration: underline;
+        }
+    }
 }
